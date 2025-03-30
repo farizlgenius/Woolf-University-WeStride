@@ -1,0 +1,36 @@
+/*
+transition-delay:s and ms
+*/
+.transition {
+  color: white;
+  background-color: blue;
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+  transition-property: margin-left;
+  transition-duration: 3s;
+}
+
+.delay1 {
+  transition-duration: 0.1s;
+}
+
+.delay2 {
+  transition-duration: 0.2s;
+}
+
+.delay3 {
+  transition-duration: 0.3s;
+}
+
+.delay4 {
+  transition-duration: 0.4s;
+}
+
+.delay5 {
+  transition-duration: 0.5s;
+}
+
+.container:hover .transition {
+  margin-left: 500px;
+}

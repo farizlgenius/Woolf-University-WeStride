@@ -1,0 +1,49 @@
+/*
+linear: การเปลี่ยนแปลงเป็นเส้นตรง
+ease: เริ่มช้า เร็วขึ้น ช้าปลาย
+ease-in: เริ่มช้า และเร็วขึ้นเรื่อยๆ
+ease-out: เริ่มเร็ว และช้าลงเรื่อยๆ
+ease-in-out: เริ่มช้า เร็วขึ้น ช้าปลาย
+step-start: เกิดทันทีที่จุดเริ่มต้น
+step-end: เกิดทันทีที่จุดสิ้นสุด
+cubic-bezier(n,n,n,n):
+steps(n,start/end):
+*/
+
+.transition {
+  color: white;
+  background-color: red;
+  width: 100px;
+  padding: 10px;
+  margin: 10px;
+  transition-property: margin-left;
+  transition-duration: 2s;
+}
+
+.container:hover .transition {
+  margin-left: 500px;
+}
+
+.ease {
+  transition-timing-function: ease;
+}
+
+.ease-in {
+  transition-timing-function: ease-in;
+}
+
+.ease-out {
+  transition-timing-function: ease-out;
+}
+
+.linear {
+  transition-timing-function: linear;
+}
+
+.step-start {
+  transition-timing-function: steps(5, start);
+}
+
+.step-end {
+  transition-timing-function: steps(5, end);
+}

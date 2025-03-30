@@ -1,0 +1,53 @@
+body {
+  background-color: #ecf0f1;
+  font-family: Raleway;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-title {
+  margin-top: 30px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+}
+
+figure {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+  padding: 0;
+  background: #fff;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.fig1 img {
+  transform: scale(1.5);
+  transition: transform 0.3s;
+}
+
+.fig1:hover img {
+  transform: scale(1);
+}
+
+.fig2 img {
+  transform: scale(1.5);
+  transition: transform 0.3s;
+}
+
+.fig2:hover img {
+  transform: scale(1);
+}
+
+.fig3 img {
+  transform: scale(1.5);
+  transition: transform 0.3s;
+}
+
+.fig3:hover img {
+  transform: scale(1);
+}

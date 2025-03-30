@@ -1,0 +1,16 @@
+.container {
+  width: 800px;
+  margin: 40px auto;
+}
+
+.rocket {
+  width: 50px;
+  text-align: center;
+  font-size: 50px;
+  transition: transform 0.5s, margin-left 1.2s ease-out;
+}
+
+.container:hover .rocket {
+  transform: rotate(45deg);
+  margin-left: 300px;
+}

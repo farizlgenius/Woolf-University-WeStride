@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Demo</title>
+  </head>
+  <body>
+    <h1>Race Register Form</h1>
+    <form action="/register">
+      <p>
+        <label for="firstname">firstname</label>
+        <input type="text" id="firstname" required />
+        <label for="lastname">lastname</label>
+        <input type="text" id="lastname" required />
+      </p>
+      <p>
+        <label>Select a race</label>
+        <input type="radio" for="funrun" />
+        <label id="funrun">Fun Run</label>
+        <input type="radio" for="halfmarathon" />
+        <label id="halfmarathon">Half Marathon</label>
+        <input type="radio" for="fullmarathon" />
+        <label id="fullmarathon">Full Marathon</label>
+      </p>
+      <p>
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+        <label for="password">Password</label>
+        <input type="password" id="password" required minlength="8" />
+      </p>
+      <p>
+        <label for="group">Group</label>
+        <select id="group">
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D" selected>D</option>
+        </select>
+      </p>
+      <input type="submit" />
+    </form>
+  </body>
+</html>

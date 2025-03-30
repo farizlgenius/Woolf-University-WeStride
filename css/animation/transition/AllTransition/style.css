@@ -1,0 +1,13 @@
+.together {
+  width: 200px;
+  height: 35px;
+  background-color: blue;
+  transition-property: transform;
+  transition-duration: 1.5s;
+  transition-timing-function: ease-out;
+  transition-delay: 2s;
+}
+
+.together-container:hover .together {
+  transform: translateX(500px);
+}

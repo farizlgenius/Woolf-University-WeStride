@@ -1,0 +1,62 @@
+body {
+  background: url("./bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  font-family: fantasy;
+  letter-spacing: 2px;
+  color: white;
+  text-shadow: 0 0 3px black;
+  background-color: gray;
+}
+
+.polaroid-card {
+  display: inline-block;
+  background-color: rgb(255, 182, 127);
+  padding: 10px;
+  box-shadow: 5px 5px 40px 10px white;
+}
+
+.polaroid-card:nth-of-type(even) {
+  transform: rotate(5deg);
+}
+
+.polaroid-card:nth-of-type(odd) {
+  transform: rotate(-5deg);
+}
+
+.polaroid-card:hover {
+  transform: scale(2);
+}
+
+.polaroid-card:nth-of-type(even)::before {
+  content: "";
+  display: block;
+  background-color: white;
+  border: solid 2px black;
+  width: 100px;
+  height: 25px;
+  transform: rotate(-10deg) translate(-40px, -30px);
+}
+
+.polaroid-card:nth-of-type(odd)::before {
+  content: "";
+  display: block;
+  background-color: white;
+  border: solid 2px black;
+  width: 100px;
+  height: 25px;
+  transform: rotate(-10deg) translate(-40px, -30px);
+}
+
+.polaroid-card-caption {
+  text-align: center;
+  font-family: fantasy;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-top: 3px;
+}

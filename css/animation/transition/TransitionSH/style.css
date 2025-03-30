@@ -1,0 +1,20 @@
+/*
+
+transition:property duration timing delay
+*/
+
+.together {
+  width: 200px;
+  height: 35px;
+  background-color: blue;
+  /* transition-property: tranform;
+  transition-duration: 1.5s;
+  transition-timing-function: ease-out;
+  transition-delay: 2s; */
+  /* Short-Hand */
+  transition: transform 1.5s ease-out;
+}
+
+.together-container:hover .together {
+  transform: translateX(500px);
+}

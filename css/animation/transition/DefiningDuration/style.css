@@ -1,0 +1,17 @@
+.transitions {
+  width: 200px;
+  height: 80px;
+  background-color: black;
+  margin: 0 auto;
+  /* transition: property duration timing; */
+  transition-property: width, background-color, height;
+  transition-duration: 10s, 2s, 3s;
+}
+
+.transitions:hover {
+  cursor: pointer;
+  border-radius: 100%;
+  background-color: blue;
+  width: 250px;
+  height: 200px;
+}

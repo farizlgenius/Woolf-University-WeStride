@@ -1,0 +1,18 @@
+/*
+cubic-bezier(x1,y1,x2,y2)
+
+x1 and x2 control on time-axis
+y1 and y2 control on value-axis
+
+*/
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: height 2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+div:hover {
+  height: 300px;
+}
