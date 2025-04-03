@@ -1,0 +1,36 @@
+body {
+  background-color: #eae067;
+  font-family: Raleway;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-title {
+  margin-top: 30px;
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  background-color: #2096c3;
+  margin-top: 30px;
+  cursor: pointer;
+  animation: move 3s infinite;
+}
+
+@keyframes move {
+  0%,
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+  25% {
+    transform: translateX(0px) translateY(200px);
+  }
+  50% {
+    transform: translateX(-200px) translateY(200px);
+  }
+  75% {
+    transform: translateX(-200px) translateY(0px);
+  }
+}
