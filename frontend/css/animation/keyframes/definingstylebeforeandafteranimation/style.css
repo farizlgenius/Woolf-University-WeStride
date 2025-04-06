@@ -1,0 +1,43 @@
+body {
+  background-color: #eae067;
+  font-family: Raleway;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-title {
+  margin-top: 30px;
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  background-color: #2096c3;
+  margin-top: 30px;
+  cursor: pointer;
+  animation-name: slide;
+  animation-duration: 2500ms;
+  animation-timing-function: ease-in-out;
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: alternate-reverse; */
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  /*
+  none: animation will start with initial state after finish animation the content will go back yo initial state.
+  forward: after finish animation the content will stay on the latest state.
+  backwards: animation will start with animation 0% state.
+  both: combine both forward and backward.
+  */
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0px;
+    background-color: #f0a1c9;
+  }
+  100% {
+    margin-left: 300px;
+    background-color: #673ab7;
+  }
+}

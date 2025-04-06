@@ -1,0 +1,29 @@
+body {
+  background-color: #eae067;
+  font-family: Raleway;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-title {
+  margin-top: 30px;
+}
+
+.box {
+  width: 230px;
+  height: 300px;
+  margin-top: 30px;
+  cursor: pointer;
+  background: url("./sprite.png");
+  animation: sprite 0.75s steps(6) infinite;
+}
+
+@keyframes sprite {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: -1536px 0px;
+  }
+}
