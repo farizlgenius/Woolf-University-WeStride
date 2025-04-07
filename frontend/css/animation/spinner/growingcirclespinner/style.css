@@ -1,0 +1,33 @@
+body {
+  background-color: #96b4f7;
+  font-family: Raleway;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-title {
+  margin-top: 30px;
+}
+
+.circular-spinner {
+  margin-top: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #e91e63;
+  border-radius: 50%;
+  animation: rotate 1s infinite linear;
+  transform: scale(0);
+  opacity: 1;
+}
+
+@keyframes rotate {
+  form {
+    transform: scale(0);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 0;
+  }
+}

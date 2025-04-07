@@ -1,0 +1,54 @@
+body {
+  background-color: #96b4f7;
+  font-family: Raleway;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-title {
+  margin-top: 30px;
+}
+
+.heartbit-loader {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  margin-top: 30px;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+.heartbit-loader::before {
+  content: "";
+  position: absolute;
+  background-color: red;
+  left: 0;
+  top: 20px;
+  width: 60px;
+  height: 40px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.heartbit-loader::after {
+  content: "";
+  position: absolute;
+  background-color: red;
+  top: 0;
+  left: 20px;
+  width: 40px;
+  height: 60px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: rotate(45deg) scale(0.75);
+  }
+  50% {
+    transform: rotate(45deg) scale(1);
+  }
+}
